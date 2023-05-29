@@ -8,11 +8,11 @@
   <script src="./js/raf.js"></script>
 </head>
 <body>
-
+  <div style="display: none" id="hideAll">&nbsp;</div>
   <script src="./js/ScratchIt.min.js"></script>
-
   <div id="scratch"><img src="./images/date.jpg" /></div>
   <script>
+    document.getElementById("hideAll").style.display = "block";
     var containerEl = document.getElementById('scratch'),
         overlayImgUrl = './images/heart_overlay.png',
         brushImgUrl = './images/brush.png',
